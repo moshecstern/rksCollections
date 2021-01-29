@@ -63,7 +63,7 @@ logoDiv: {
 }))
 
 
-const HeaderLogo = ({logo, logo2}) => {
+const HeaderLogo = ({logo, logo2, link1, link2}) => {
     const classes = useStyles();
     return (
         <div className={classes.root}>
@@ -71,13 +71,13 @@ const HeaderLogo = ({logo, logo2}) => {
        <Grid container direction='row'>
 
         <Grid item md={3}>
-     <Link to={"/home"} >
+     <Link to={link2} >
          <img src={logo2} alt="Churchland Psychological Center" className={classes.logo}></img>
 
           </Link>
           </Grid>
         <Grid item md={6}>
-     <Link to={"/home"} >
+     <Link to={link1} >
          <img src={logo} alt="Churchland Psychological Center" className={classes.logo}></img>
 
           </Link>

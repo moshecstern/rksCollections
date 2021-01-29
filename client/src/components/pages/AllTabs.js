@@ -2,20 +2,21 @@ import About from './About'
 import Locations from './Locations'
 import StaffCard from './Staff'
 import Forms from './Forms'
-import Forum from './Forum'
+import MyLogo from "../../Images/cpclogo2.png";
+import HeaderLogo from '../layout/HeaderLogo';
+
 // import ContactUs from '../Features/ContactUs'
 import Payment from './Payment'
 
 import React from 'react';
 import PropTypes from 'prop-types';
 import { makeStyles } from '@material-ui/core/styles';
-import AppBar from '@material-ui/core/AppBar';
-import Tabs from '@material-ui/core/Tabs';
-import Tab from '@material-ui/core/Tab';
-import Typography from '@material-ui/core/Typography';
-import Box from '@material-ui/core/Box';
-
-import Link from '@material-ui/core/Link';
+import {
+  AppBar,
+  Tab,
+  Tabs,
+  Box
+} from '@material-ui/core';
 import Dbparagraph from '../layout/Dbparagraph'
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -103,6 +104,13 @@ export default function ScrollableTabsButtonAuto() {
   };
 
   return (
+    <>
+      <HeaderLogo 
+          logo={MyLogo}
+          logo2={MyLogo}
+          link1={"/"}
+          link2={"/gifted"}
+      />
     <div className={classes.root}>
       <AppBar position="relative" color="primary">
         <Tabs
@@ -116,11 +124,11 @@ export default function ScrollableTabsButtonAuto() {
           aria-label="Healthcare Options"
         >
           <Tab label="Home" {...a11yProps(0)} />
-          <Tab label="Therapists" {...a11yProps(1)} />
-          <Tab label="Locations" {...a11yProps(2)} />
-          <Tab label="Forms" {...a11yProps(3)} />
-          <Tab label="Payment" {...a11yProps(4)} />
-          <Tab label="FAQs" {...a11yProps(5)} />
+          <Tab label="About" {...a11yProps(1)} />
+          <Tab label="Portfolio" {...a11yProps(2)} />
+          <Tab label="Shop" {...a11yProps(3)} />
+          <Tab label="Contact" {...a11yProps(4)} />
+          {/* <Tab label="Contact" {...a11yProps(5)} /> */}
           {/* <Tab label="Contact Us" {...a11yProps(6)} /> */}
         </Tabs>
       </AppBar>
@@ -153,9 +161,9 @@ export default function ScrollableTabsButtonAuto() {
 </Typography> */}
 <Dbparagraph catagory={"editpayment"}/>
       </TabPanel>
-      <TabPanel value={value} index={5}>
+      {/* <TabPanel value={value} index={5}>
       <Forum />
-      </TabPanel>
+      </TabPanel> */}
       {/* <TabPanel value={value} index={6}>
       <Typography variant="h1" component="h2" className={classes.h1theme}>
   Contact Us
@@ -173,5 +181,6 @@ export default function ScrollableTabsButtonAuto() {
 <Dbparagraph catagory={"editcontact"}/>
       </TabPanel> */}
     </div>
+    </>
   );
 }

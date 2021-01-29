@@ -1,6 +1,6 @@
 import About from '../gifted/About';
 import MyLogo from "../../Images/cpclogo2.png";
-import Locations from './Locations';
+// import Locations from './Locations';
 // import StaffCard from './Staff'
 import Forms from './Forms'
 // import Forum from './Forum'
@@ -10,13 +10,14 @@ import Forms from './Forms'
 import React from 'react';
 import PropTypes from 'prop-types';
 import { makeStyles } from '@material-ui/core/styles';
-import AppBar from '@material-ui/core/AppBar';
-import Tabs from '@material-ui/core/Tabs';
-import Tab from '@material-ui/core/Tab';
-import Typography from '@material-ui/core/Typography';
-import Box from '@material-ui/core/Box';
+import {
+  AppBar,
+  Tab,
+  Tabs,
+  Box
+} from '@material-ui/core';
 
-import Link from '@material-ui/core/Link';
+
 import Dbparagraph from '../layout/Dbparagraph'
 import Services from '../gifted/Services'
 import Testimonials from '../gifted/Testimonials';
@@ -113,6 +114,8 @@ export default function Gifted() {
       <HeaderLogo 
           logo={MyLogo}
           logo2={MyLogo}
+          link1={"/gifted"}
+          link2={"/"}
       />
     <div className={classes.root}>
       <AppBar position="relative" color="primary">

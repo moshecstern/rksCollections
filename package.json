@@ -1,5 +1,5 @@
 {
-  "name": "rkscollections",
+  "name": "rkscollection",
   "version": "1.0.0",
   "description": "RKS Collections",
   "main": "server.js",

@@ -62,7 +62,7 @@ const App = () => {
               <AlertState>
                   <Router>
                     <Fragment>
-                      <Navbar />
+                      {/* <Navbar /> */}
                       <div className={classes.bg}>
                         <Alerts />
                         <Switch className={classes.container}>
@@ -81,6 +81,7 @@ const App = () => {
                           <Route exact path="/home" component={AllTabs} />
                           <Route exact path="/success" component={Success} />
                           <Route exact path="/payfail" component={PayFail} />
+
                           <Route exact path="/gifted" component={Gifted} />
                           {/* <Route exact path="/checkout" component={Checkout} />
                           <Route exact path="/plans" component={Plans} /> */}
