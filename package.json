@@ -1,7 +1,7 @@
 {
-  "name": "contact-keeper",
+  "name": "rkscollections",
   "version": "1.0.0",
-  "description": "Contact manager app",
+  "description": "RKS Collections",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
