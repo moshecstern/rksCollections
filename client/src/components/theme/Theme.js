@@ -67,17 +67,33 @@ const theme = createMuiTheme({
   typography: {
     h1:{
       fontFamily: 'Amperzand, Arial',
-      fontSize: 80,
+      fontSize: 60,
+      color: "#555F61",
+      margin: 15,
+      // border: "0px solid rgba(0, 0, 0, 1)",
+      // backgroundColor: "rgba(213, 217, 223, 1)",
+      // borderRadius: 0,
+      // minHeight: 124,
+      display: 'flex',
+      placeItems: 'flex-end', 
+      paddingBottom: 10,
+      paddingLeft: 10
       // [theme.breakpoints.up("md")]: {
       //   fontSize: 50
       // }
       
     },
     h2: {
-      fontFamily: 'Raleway'
+      fontFamily: 'Amperzand, Arial',
+      color: '#555F61',
+      fontSize: 75,
+      margin: 5
     },
     h3: {
-      fontFamily: 'Whitney'
+      fontFamily: 'Whitney',
+      color: '#FCDBCE',
+      fontSize: 30,
+      margin: 5
     },
     h4: {
 
@@ -85,26 +101,33 @@ const theme = createMuiTheme({
     h5: {
       fontFamily: 'Raleway, Arial',
       fontSize: 26,
+      margin: 5
     },
     h6: {
       fontFamily: 'Raleway, Arial',
       fontSize: 24,
+      margin: 5
     },
     subtitle1: {
       fontFamily: 'Amperzand, Arial',
-      fontSize: 40
+      color: '#A9ADBF',
+      fontSize: 15,
+      margin: 5
     },
     subtitle2: {
       fontFamily: 'Raleway, Arial',
-      fontSize: 40
+      fontSize: 36,
+      margin: 5
     },
     body1: {
       fontFamily: 'Raleway, Arial',
-      fontSize: 20
+      color: '#555F61',
+      fontSize: 15,
+      margin: 5
     },
     body2: {
       fontFamily: 'Opensans, Arial',
-      fontSize: 22,
+      fontSize: 20,
     },
   
 

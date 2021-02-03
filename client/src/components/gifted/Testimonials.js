@@ -1,14 +1,13 @@
-import React from 'react'
+import React from 'react';
 import {
     Typography
-} from '@material-ui/core'
+} from '@material-ui/core';
+import Title from './Title';
 
 const Testimonials = () => {
     return (
         <div>
-            <Typography as='h2'>
-                Testimonials
-            </Typography>
+            <Title title={'Past Projects & Testimonials'} />
         </div>
     )
 }
