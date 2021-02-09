@@ -83,6 +83,11 @@ const App = () => {
                           <Route exact path="/payfail" component={PayFail} />
 
                           <Route exact path="/gifted" component={Gifted} />
+                          <Route exact path="/gifted/services" component={Gifted} />
+                          <Route exact path="/gifted/about" component={Gifted} />
+                          <Route exact path="/gifted/testimonials" component={Gifted} />
+                          <Route exact path="/gifted/contact" component={Gifted} />
+                          <Route exact path="/gifted/premadebaskets" component={Gifted} />
                           {/* <Route exact path="/checkout" component={Checkout} />
                           <Route exact path="/plans" component={Plans} /> */}
                         </Switch>
